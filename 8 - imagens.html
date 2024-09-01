@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Elementos especificos clicaveis da imagem -->
+     <img src="imagens/Quarto.jpg" usemap="#quarto">
+     <map name="quarto">
+
+        <!-- Areas clicaveis (para pegar coordenadas use o site https://www.image-map.net/) -->
+         <area shape="rect" coords="282,344,0,131" alt="Retangulo" href="https://www.direcional.com.br/blog/decoracao/modelo-de-guarda-roupa/">
+         <area shape="circle" coords="475,175,55" alt="Circulo" href="https://www.poesiamuda.com.br/quadro-decorativo-leao-aquarela">
+         <area shape="poly" coords="390,241,550,248,560,469,227,508,145,353,361,341" alt="Poly" href="https://www.dommascate.com.br/combos/combo-cama-baronesa-solteiro-com-pez-baixa-60-cama-auxiliar">
+     </map>
+
+    <!-- Imagens diferentes dependendo do tamanho da janela -->
+    <picture>
+        <source media="(min-width: 650px)" srcset="imagens/quarto.jpg">
+        <source media="(min-width: 465px)" srcset="imagens/floresta.jpeg">
+        <img src="imagens/googlee.png">
+      </picture>
+</body>
+</html>
